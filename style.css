@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2076&q=80");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.card {
+  background: #000000b2;
+  max-width: 470px;
+  width: 100%;
+  padding: 2.5em;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  background-color: #575757;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  min-width: 300px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+input#search:hover {
+  background: #65747b;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.weather {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.more-info p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.more-info span {
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  input {
+    min-width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+
+  .weather h2 {
+    flex-direction: column;
+  }
+}
